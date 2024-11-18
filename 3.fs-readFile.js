@@ -4,7 +4,6 @@
 const fs = require('node:fs');
 
 console.log('leyendo el primer archivo...');
-
 /*
  * readFile(path, options, callback) <----- esto para trabajar de manera ASINCRONA
  * path: ruta del archivo
@@ -17,8 +16,6 @@ fs.readFile('ejemplo.txt', 'utf8', (err, text) => {
     console.log(text);
 });
 
-
-
 console.log('haciendo cosas cuando lo esta leyendo...');
 console.log('leyendo el segundo archivo...');
 
@@ -27,7 +24,11 @@ fs.readFile('ejemplo2.txt', 'utf8', (err, text) => {
     console.log(text);
 });
 
+function sum(n1, n2){
+    return n1 + n2;
+}
 
+console.log(sum(1,2)); // 3
 
 // MANERA DE TRANSFORMAR DE CALLBACK A PROMESAS
 

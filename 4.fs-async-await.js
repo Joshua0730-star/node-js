@@ -15,7 +15,6 @@ const { readFile } = require('node:fs/promises');
         const text = await readFile('./ejemplo.txt', 'utf8');
         console.log(text);
             
-            
         console.log('haciendo cosas cuando lo esta leyendo...');
         console.log('leyendo el segundo archivo...');
             
@@ -27,3 +26,8 @@ const { readFile } = require('node:fs/promises');
 
 
 
+function sum(n1, n2){
+    return n1 + n2;
+}
+
+console.log(sum(4,2)); //  6 
